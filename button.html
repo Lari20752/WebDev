@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <style type="text/css">
+        body {background-color: aqua;}
+
+        #mainHeader{
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        #ButtonSection{
+            text-align: center;
+        }
+
+        #mainFooter{
+            text-align: left;
+            font-family: fantasy;
+        }
+    </style>
+
+
+    <head>
+        <title> Button </title>
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            var counter = 0;
+
+            function incr(){
+                counter += 1;
+                updateDisplay();
+            }
+
+            function decr(){
+                counter -= 1;
+                updateDisplay();
+            }
+
+            function updateDisplay(){
+                document.getElementById("clickCounter").innerHTML = counter;
+            }
+
+        </script>
+
+        <header id="mainHeader">
+            <h3> Actual working button</h3>
+        </header>
+
+        
+
+        <div id="ButtonSection">
+            <h3 id="clickCounter">0</h3>
+        
+            <button onclick="incr()">Increase</button>
+            <button onclick="decr()">Decrease</button>
+        </div>
+
+
+
+    </body>
+
+
+
+
+    
+        
+
+    <footer id="mainFooter">
+        <small> Low Quality Garbage &copy; Lari20752 2022 </small>
+        <!-- It's a joke pls don't sue -->
+    </footer>
+
+
+</html>
